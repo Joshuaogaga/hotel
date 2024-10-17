@@ -15,6 +15,8 @@ stories:
       - action: utter_confirmation
       - intent: affirm
       - action: utter_done
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 2
     steps:
@@ -28,6 +30,8 @@ stories:
         entities:
           - room_type: "Deluxe"
       - action: utter_confirmation
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 3
     steps:
@@ -41,6 +45,8 @@ stories:
       - action: utter_confirmation
       - intent: affirm
       - action: utter_done
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 4
     steps:
@@ -54,6 +60,8 @@ stories:
       - action: utter_confirmation
       - intent: affirm
       - action: utter_done
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 5
     steps:
@@ -65,6 +73,8 @@ stories:
       - action: action_relative
       - intent: affirm
       - action: utter_done
+      -  intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 6
     steps:
@@ -76,31 +86,43 @@ stories:
       - action: utter_cleaning_confirm
       - intent: affirm
       - action: utter_done
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 7
     steps:
       - intent: checkin
       - action: utter_checkin
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 8
     steps:
       - intent: checkout
       - action: utter_checkout
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 9
     steps:
       - intent: cancelreservation
       - action: utter_cancelreservation
+      - intent:  thankyou
+      -  action: utter_welcome
 
   - story: Story path 10
     steps:
       - intent: cancellationpolicy
       - action: utter_cancellationpolicy
+      -  intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 11
     steps:
       - intent: restaurant
       - action: utter_restaurant
+      - intent: thankyou
+      - action: utter_welcome
 
   - story: Story path 12
     steps:
@@ -121,3 +143,63 @@ stories:
     steps:
       - intent: goodbye
       - action: utter_bye
+
+  - story: Story path 16
+    steps:
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 17
+    steps:
+      - intent: transportation
+      - action: utter_transportation_services
+      - intent: affirm
+      - action: utter_done
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 18
+    steps:
+      - intent: payment
+      - action: utter_payment_methods
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 19
+    steps:
+      - intent: spa
+      - action: utter_spa_services
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 20
+    steps:
+      - intent: gym
+      - action: utter_gym_services
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 21
+    steps:
+      - intent: laundry
+      - action: utter_laundry_services
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 22
+    steps:
+      - intent: petpolicy
+      - action: utter_pet_policy
+      - intent: thankyou
+      - action: utter_welcome
+
+  - story: Story path 23
+    steps:
+      - intent: nul
+      - action: utter_null
+      - intent: nul
+      - action: utter_null
+      - intent: nul
+      - action: utter_null
+      - action: utter_customer_service
+  

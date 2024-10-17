@@ -3,6 +3,7 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - thankyou
   - affirm
   - deny
   - booking
@@ -21,6 +22,13 @@ intents:
   - breakfast
   - breakfasttimings
   - restauranttimings
+  - transportation
+  - payment
+  - spa
+  - gym
+  - laundry
+  - petpolicy
+  - nul
 
 entities:
   - number_of_rooms
@@ -67,10 +75,25 @@ actions:
   - utter_breakfasttimings
   - utter_restauranttimings
   - utter_bye
+  - utter_welcome
+  - utter_transportation_services
+  - utter_payment_methods
+  - utter_spa_services
+  - utter_gym_services
+  - utter_laundry_services
+  - utter_pet_policy
+  - utter_null
+  - utter_customer_service
+
 
 responses:
   utter_greet:
-    - text: "Hey! I'm here for hotel service."
+   - text: "Hello! How can I assist you today?"
+   - text: "Hi there! I'm here to help you with all your hotel needs."
+   - text: "Greetings! What can I do for you today?"
+   - text: "Welcome! I'm your virtual assistant. How may I help you?"
+   - text: "Hey! Ready to assist you with your stay. What do you need?"
+
 
   utter_enquiry_room_no:
     - text: "How many rooms would you like to book?"
@@ -121,6 +144,44 @@ responses:
 
   utter_bye:
     - text: "Goodbye! Have a great day ahead!"
+  
+  utter_welcome:
+    - text: "You're welcome! If you have any more questions, feel free to ask"
+    - text: "Glad I could assist! Let me know if there's anything else."
+    - text: "Anytime! I'm here for you."
+
+  utter_transportation_services:
+    - text: "Yes, we can arrange transportation for you. Would you like to confirm a booking?"
+    - text: "We offer transportation services. Would you like to go ahead and book a ride?"
+    - text: "Yes, we can help with your transportation needs. Would you like me to book it for you?"
+    - text: "Absolutely, we can arrange transportation. Do you want me to confirm the booking?"
+
+  utter_payment_methods:
+    - text: "We accept credit cards, debit cards, and cash payments."
+    - text: "You can pay using major credit cards, debit cards, or cash."
+    - text: "We accept various payment methods including credit cards and cash."
+    - text: "You can choose from credit cards, debit cards, or cash payments."
+  
+  utter_spa_services:
+    - text: "We have a full-service spa offering various treatments. You can find the complete spa menu and details on our website."
+
+  utter_gym_services:
+    - text: "Yes, we have a fully equipped gym for our guests to use during their stay and its open 24/7"
+
+  utter_laundry_services:
+    - text: "Yes, we offer laundry services for our guests. The prices vary by item, and the usual turnaround time is 24 hours. You can find more details on our website"
+
+  utter_pet_policy:
+    - text: "Yes, we are pet-friendly! There may be additional charges. You can find more information about our pet policy on our website under the 'Pet Policy' section."
+
+  utter_null:
+    - text: "I’m sorry, I didn’t quite understand that. Could you please rephrase your question?"
+    - text: "Hmm, it seems I missed that. Can you try asking again?"
+    - text: "I didn't quite catch that. What can I help you with?"
+    - text: "I'm not sure what you mean. Could you clarify your request?"
+
+  utter_customer_service:
+    - text: "If you're still having trouble, please call our customer service at 2503432090. They're happy to assist you!"
 
 session_config:
   session_expiration_time: 60

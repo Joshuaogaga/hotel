@@ -143,3 +143,86 @@ nlu:
       - don't like that
       - no way
       - not really
+  
+  - intent: thankyou
+    examples: |
+     - thanks
+     - thanks, thats great
+     - thank you
+     - thanks man
+     - thanks for the help
+
+  - intent: transportation
+    examples: |
+     - Do you offer taxi services?
+     - Can you arrange transportation for me?
+     - Is there a shuttle service available?
+     - Do you have transportation options?
+     - Can I book a ride through the hotel?
+     - Are there any transportation services provided?
+     - How do I arrange for a taxi?
+     - Can you help me get a ride?
+
+  - intent: inquire_payment
+    examples: |
+     - What payment methods do you accept?
+     - Can I pay with a credit card?
+     - How do I settle my bill?
+     - What is the billing process?
+     - Do you accept cash payments?
+     - Can I pay for my room in advance?
+     - Is there a deposit required?
+     - When do I need to pay for my stay?
+
+  - intent: spa
+    examples: |
+     - Do you have a spa?
+     - What spa treatments do you offer?
+     - Can I book a massage?
+
+  - intent: gym
+    examples: |
+     - What are the hours for the gym?
+     - Is the gym open all day?
+     - Do you have a fitness center for guests?
+     - Can I use the gym at any time?
+     - What equipment can I find in the gym?
+     - Are there personal trainers available?
+     - Is there a swimming pool in the gym area?
+     - What time does the gym close?
+
+  - intent: laundry
+    examples: |
+     - Do you offer laundry services?
+     - How much do laundry services cost?
+     - What is the turnaround time for laundry?
+     - Is laundry service available?
+
+  - intent: petpolicy
+    examples: |
+     - Are pets allowed?
+     - Do you have a pet policy?
+     - Can I bring my dog?
+     - Is there a pet fee?
+     - What are the pet rules?
+     - Can I have a pet in my room?
+     - Do you have pet-friendly rooms?
+
+  - intent: nul
+    examples: |
+     - I don’t know what to say.
+     - (mumbles incoherently)
+     - Huh?
+     - Can you repeat that?
+     - What?
+     - I didn’t get that.
+     - That doesn’t make sense.
+     - I am confused.
+     - Can you clarify?
+     - I don’t understand.
+     - Blah blah blah.
+     - QWERTY!
+    
+
+
+

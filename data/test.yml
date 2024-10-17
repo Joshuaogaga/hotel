@@ -1,0 +1,90 @@
+version: "2.0"
+
+tests:
+  - name: Test Room Booking
+    steps:
+      - user: |
+          I want to book a room.
+      - bot: |
+          How many rooms would you like to book?
+      - user: |
+          Two rooms.
+      - bot: |
+          What type of rooms would you like to book?
+          - Deluxe
+          - Simple
+      - user: |
+          I choose Simple.
+      - bot: |
+          You have chosen to book 2 Simple rooms. Confirm?
+      - user: |
+          Yes.
+      - bot: |
+          Booked successfully!
+
+  - name: Test Request Room Cleaning
+    steps:
+      - user: |
+          I need my room cleaned.
+      - bot: |
+          When should I arrange for a cleaning?
+      - user: |
+          Right away.
+      - bot: |
+          Sure, I will send someone to your room right away.
+
+  - name: Test Handle FAQs
+    steps:
+      - user: |
+          What are your check-in timings?
+      - bot: |
+          Check-in time starts at 4 PM. Minimum check-in age is 21. Please contact the reception for early check-in requests.
+
+  - name: Test Greeting
+    steps:
+      - user: |
+          Hello!
+      - bot: |
+          Hey! I'm here for hotel service.
+
+  - name: Test Transportation Services
+    steps:
+      - user: |
+          Do you offer transportation services?
+      - bot: |
+          Yes, we can arrange transportation for you. Would you like to confirm a booking?
+
+  - name: Test Gym Services
+    steps:
+      - user: |
+          Do you have a gym?
+      - bot: |
+          Yes, we have a fully equipped gym for our guests to use during their stay, and it's open 24/7.
+
+  - name: Test Spa Services
+    steps:
+      - user: |
+          What spa services do you offer?
+      - bot: |
+          We have a full-service spa offering various treatments. You can find the complete spa menu and details on our website.
+
+  - name: Test Laundry Services
+    steps:
+      - user: |
+          Do you have laundry services?
+      - bot: |
+          Yes, we offer laundry services for our guests. The prices vary by item, and the usual turnaround time is 24 hours. You can find more details on our website.
+
+  - name: Test Pet Policy
+    steps:
+      - user: |
+          Is your hotel pet-friendly?
+      - bot: |
+          Yes, we are pet-friendly! There may be additional charges. You can find more information about our pet policy on our website under the 'Pet Policy' section.
+
+  - name: Test Thank You Response
+    steps:
+      - user: |
+          Thank you!
+      - bot: |
+          You're welcome! If you have any more questions, feel free to ask.
